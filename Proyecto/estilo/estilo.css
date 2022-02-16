@@ -1,0 +1,591 @@
+/* Estilo del body */
+body {
+  margin: 0px;
+  font-family: "Montserrat", Verdana, sans-serif;
+}
+
+/* Estilo de la cabecera (banda lila)  */
+.cabecera {
+  text-align: center;
+  background-color: purple;
+  font-size: small;
+  padding: 1px;
+}
+
+.listaCabecera li {
+  display: inline;
+  padding: 65px;
+  color: white;
+}
+
+/* Estilo del menú grande de la cabecera */
+.menu {
+  text-align: center;
+  font-size: x-large;
+}
+
+.menu li {
+  display: inline;
+  padding: 35px;
+  cursor: pointer;
+}
+
+/* Estilo del menú de categrías */
+
+#menu:checked ~ ul {
+  display: block;
+}
+
+#menu {
+  display: none;
+}
+
+.listaDes li {
+  display: block;
+  background-color: purple;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+.menuCat {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 200px;
+  height: 41px;
+  background-color: purple;
+  padding: 10px;
+  color: white;
+}
+
+.menuCat:hover {
+  cursor: pointer;
+}
+
+.listaDes li:hover {
+  cursor: pointer;
+  background-color: plum;
+  color: yellow;
+}
+
+.categorias {
+  float: left;
+  margin-left: 15%;
+}
+
+/* Estilo del buscador de la cabecera */
+.listaDes {
+  display: none;
+  margin-top: 0;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+}
+
+#menuBuscador:checked ~ ul {
+  display: block;
+}
+
+#menuBuscador {
+  display: none;
+}
+
+.listarBuscador li {
+  display: block;
+  background-color: purple;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+.menuBusc {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 200px;
+  height: 41px;
+  background-color: purple;
+  padding: 10px;
+  color: white;
+}
+
+.menuBusc:hover {
+  cursor: pointer;
+}
+
+.dinero:hover {
+  cursor: pointer;
+  background-color: plum;
+  color: yellow;
+}
+
+.buscarCategoria {
+  border: 1px solid #dbe1eb;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.botonBuscar {
+  border: 1px solid #dbe1eb;
+  background-color: white;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  margin-right: 100px;
+}
+
+.botonBuscar:hover {
+  cursor: pointer;
+  color: white;
+  background-color: purple;
+}
+
+.cesta {
+  color: white;
+  border: 1px solid purple;
+  background-color: purple;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.cesta:hover {
+  cursor: pointer;
+}
+
+.fas {
+  padding-right: 10px;
+  font-size: 20px;
+  border-right: 1px solid white;
+  margin: 1px 15px 4px 8px;
+}
+
+.buscador {
+  float: right;
+  margin-right: 25%;
+}
+
+/* Estilo del fondo de las categorías de la cabecera */
+.categorias,
+.buscador {
+  display: inline;
+}
+
+.conjuntoCategorias {
+  position: static;
+  background: none repeat scroll 0 0;
+  background-color: orange;
+  padding: 15px;
+  width: 98.45%;
+  height: 43px;
+}
+
+/* Estilo del banner */
+.imagen {
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+  background-image: url("/imagenes/banner.jpg");
+}
+
+/* Estilo de los hr */
+.lineaImagen {
+  border: 5px solid green;
+  width: 60%;
+}
+
+.lineaDisney {
+  border: 5px solid pink;
+  width: 60%;
+  float: left;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+/* Estilo de las novedades*/
+.imagenes img {
+  width: 200px;
+  height: 200px;
+}
+
+#ultimasNovedades {
+  color: purple;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#novedades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 35%;
+  height: auto;
+  float: right;
+  margin-right: 20%;
+}
+
+#infoNovedades {
+  text-align: center;
+  float: left;
+  margin-left: 18%;
+  margin-top: 20px;
+}
+
+.producto {
+  border: solid rgb(230, 230, 230) 2px;
+  border-radius: 8px;
+  height: auto;
+  width: 250px;
+  margin: 5px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.producto:hover {
+  border: solid black 2px;
+}
+
+.pieProducto {
+  background-color: purple;
+  padding: 15px;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.comprarBoton {
+  margin-left: 50px;
+  margin-right: -20px;
+  background-color: #ac5ac0;
+  color: white;
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid #ac5ac0;
+  cursor: pointer;
+}
+
+.nombre {
+  color: purple;
+}
+
+.categoria {
+  color: grey;
+  font-size: small;
+}
+
+/* ESTILO DE DISNEY*/
+
+#disney {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 35%;
+  height: auto;
+  float: right;
+  margin-right: 20%;
+}
+
+#infoDisney {
+  text-align: center;
+  float: left;
+  margin-left: 18%;
+  margin-top: 20px;
+}
+
+#ultimoDisney {
+  color: purple;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/*ESTILO CATEGORÍAS*/
+#cuerpoPagina2 {
+  text-align: center;
+  float: left;
+}
+
+.tituloCategorias {
+  text-align: center;
+  width: 25%;
+  margin-left: 37%;
+}
+
+#colocarNovedades,
+#colocarDisney,
+#colocarVideojuegos,
+#colocarAnime,
+#colocarCine,
+#colocarRopa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin-top: -70px;
+}
+
+/**/
+.listaBuscador {
+  margin-top: 0;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+}
+
+.listaBuscador li {
+  display: block;
+  background-color: purple;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+#filtrarNov,
+#filtrarNov1,
+#filtrarDis,
+#filtrarCine,
+#filtrarVid,
+#filtrarAni,
+#filtrarRopa {
+  margin-left: 75%;
+}
+
+/* FORMULARIO CREAR CESTA */
+.formCrearCesta {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-top: 100px;
+}
+
+.formCrearCesta input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#botonCrearCesta {
+  text-transform: uppercase;
+  outline: 0;
+  color: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+#botonMostrarCesta {
+  text-transform: uppercase;
+  outline: 0;
+  color: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: -50px;
+}
+
+#mensajeMal {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+  color: red;
+  font-weight: bold;
+  border: 3px solid red;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 183, 183);
+}
+
+#mensajeBien {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+  color: #00cc00;
+  font-weight: bold;
+  border: 3px solid #00cc00;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5fdb5;
+}
+
+/* MOSTRAR CESTAS */
+.totalCestas {
+  text-align: center;
+  width: 300px;
+  height: auto;
+  padding-bottom: 25px;
+  margin-top: 50px;
+  margin: 10px;
+  margin-top: 40px;
+}
+
+#cestas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+#cestaSeleccionada {
+  width: 100px;
+}
+
+/* INICIO SESIÓN */
+#iniciarSesion,
+#crearCuenta,
+#cerrarSesion {
+  cursor: pointer;
+}
+
+.registro {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-top: 100px;
+}
+
+.registro input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#botonRegistro {
+  text-transform: uppercase;
+  outline: 0;
+  color: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+
+.formInicioSesion {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-top: 100px;
+}
+
+.formInicioSesion input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#botonInicioSesion {
+  text-transform: uppercase;
+  outline: 0;
+  color: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+
+.usuCreado {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: -70px;
+  color: #00cc00;
+  font-weight: bold;
+  border: 3px solid #00cc00;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5fdb5;
+}
+
+.usuMalCreado {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: -70px;
+  color: red;
+  font-weight: bold;
+  border: 3px solid red;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 183, 183);
+}

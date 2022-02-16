@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="./estilo/estilo.css" rel="stylesheet" type="text/css" />
+    <title>Bienvenido</title>
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+        <ul class="listaCabecera">
+          <li class="email">info@tiendafriki.com</li>
+          <li class="telefono">TELÉFONO: <strong>+34 686 909 374</strong></li>
+          <li id="crearCuenta">CREAR CUENTA</li>
+          <li id="iniciarSesion">INICIAR SESIÓN</li>
+          <li id="cerrarSesion"></li>
+          <li id="cestaSeleccionada"></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul class="listaMenu">
+          <li>OFERTAS</li>
+          <li>NOVEDADES</li>
+          <li id="inicio">INICIO</li>
+          <li>BLOG</li>
+          <li>CONTACTAR</li>
+        </ul>
+      </div>
+      <div class="conjuntoCategorias">
+        <div class="categorias">
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="menuCat"> ☰ CATEGORÍAS</label>
+          <ul class="listaDes">
+            <li id="catNovedades">NOVEDADES</li>
+            <li id="catDisney">DISNEY</li>
+            <li id="catCine">CINE & TV</li>
+            <li id="catVideojuegos">VIDEOJUEGOS</li>
+            <li id="catAnime">ANIME & MANGA</li>
+            <li id="catRopa">ROPA</li>
+          </ul>
+        </div>
+        <div class="buscador">
+          <input type="checkbox" id="menuBuscador" />
+          <label for="menuBuscador" class="menuBusc"> Buscar categorías </label
+          ><input
+            type="text"
+            id="buscarCategoria"
+            name="buscarCategoria"
+            class="buscarCategoria"
+            placeholder="Buscar aquí"
+          />
+          <button id="botonBuscar" class="botonBuscar">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="cesta" id="botonCesta">
+            <i class="fas fa-shopping-cart"></i> Mi cesta
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="cuerpoPagina">
+      <div class="imagen"></div>
+      <br /><br />
+      <hr class="lineaImagen" />
+      <div id="infoNovedades">
+        <p id="ultimasNovedades">Últimas novedades</p>
+        <img
+          src="https://lafrikileria.com/23332-large_default/set-funko-pop-joker-y-harley-quinn-escuadron-suicida.jpg"
+        />
+      </div>
+      <div id="novedades"></div>
+      <hr class="lineaDisney" />
+      <div id="infoDisney">
+        <p id="ultimoDisney">Disney</p>
+        <img src="./imagenes/disney.png" />
+      </div>
+      <div id="disney"></div>
+    </div>
+    <div id="cestas"></div>
+    <br /><br /><br />
+
+    <script src="./JS/proyecto.js" type="module"></script>
+  </body>
+</html>
